@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_issueComp"
+        android:icon="@drawable/complete"
+        android:title="@string/issue"/>
+
+    <item
+        android:id="@+id/action_addnotesComp"
+        android:icon="@drawable/notes"
+        android:title="@string/addNotescomp"/>
+
+    <item
+        android:id="@+id/action_viewnotecomp"
+        android:icon="@drawable/notes"
+        android:title="@string/viewNotescomp"/>
+
+    <item
+        android:id="@+id/action_viewNotessavecom"
+        android:icon="@drawable/accept"
+        android:title="@string/viewNotessavecom"/>
+
+    <item
+        android:id="@+id/action_viewNotescancelcom"
+        android:icon="@drawable/reject"
+        android:title="@string/viewNotescancelcom"/>
+
+    <item
+        android:id="@+id/action_issuesavecomponenet"
+        android:icon="@drawable/accept"
+        android:title="@string/issuesavecomponent"/>
+
+    <item
+        android:id="@+id/action_issuecancelcomponent"
+        android:icon="@drawable/reject"
+        android:title="@string/issuecancelcomponent"/>
+
+</menu>

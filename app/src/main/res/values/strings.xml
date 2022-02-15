@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MyJobCard Glass</string>
+    <string name="title_activity_live_card_service">MyJobCard Glass</string>
+    <string name="action_stop">Stop</string>
+    <string name="hello_world">Hello MyJobCard</string>
+
+    <string name="start_command">MyJobCard</string>
+    <string name="title_activity_card_scroll">Hello World Immersion</string>
+    <string name="title_activity_slider">Hello World Immersion</string>
+    <string name="title_activity_work_order_card_scroll">Hello World Immersion</string>
+    <string name="title_activity_work_order_card">Hello World Immersion</string>
+
+    //wo menu items
+    <string name="accept">Accept</string>
+    <string name="start">Start</string>
+    <string name="hold">Hold</string>
+    <string name="reject">Reject</string>
+    <string name="suspend">Suspend</string>
+    <string name="tranefer">Transfer</string>
+    <string name="enroute">Enroute</string>
+    <string name="onsite">Onsite</string>
+    <string name="complete">Complete</string>
+
+    //OkGlass menu
+    <string name="operation">Operations</string>
+    <string name="components">Components</string>
+    <string name="attachments">Attachments</string>
+    <string name="changestatus">Change Status</string>
+    <string name="title_activity_operations_card">Hello World Immersion</string>
+    <string name="title_activity_components_card">Hello World Immersion</string>
+    <string name="title_activity_attachments_card">Hello World Immersion</string>
+
+    //Operations Menu
+    <string name="addNotesopr">Add Notes</string>
+    <string name="markCmplt">Mark Complete</string>
+    <string name="viewNotesopr">View Notes</string>
+    <string name="viewNotesoprsave">Save</string>
+    <string name="viewNotesoprcancel">Cancel</string>
+    <string name="viewNotesoprcomplete">Complete</string>
+    <string name="viewNotesoprcancelcmplt">Cancel</string>
+
+    //Components Menu
+    <string name="issue">Issue</string>
+    <string name="addNotescomp">Add Notes</string>
+    <string name="viewNotescomp">View Notes</string>
+    <string name="viewNotessavecom">Save</string>
+    <string name="viewNotescancelcom">Cancel</string>
+    <string name="issuesavecomponent">Save</string>
+    <string name="issuecancelcomponent">Cancel</string>
+    <string name="title_activity_bluetooth_live_card_service">Hello World LiveCard</string>
+
+    //Attachments Menu
+    <string name="sendattach">Send</string>
+    <string name="cancleattach">Cancel</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+
+</resources>

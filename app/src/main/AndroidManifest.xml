@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ondevice.myjobcard_glass">
+
+    <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".LiveCardMenuActivity"
+            android:label="@string/title_activity_live_card_service"
+            android:theme="@style/MenuTheme">
+            <!--<intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />-->
+        </activity>
+        <activity
+            android:name=".AttachmentsCard"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_attachments_card" />
+        <activity
+            android:name=".ComponentsCard"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_components_card" />
+        <activity
+            android:name=".OperationsCard"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_operations_card" />
+        <activity
+            android:name=".WorkOrderCard"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_work_order_card" />
+        <activity
+            android:name=".WorkOrderCardScrollActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_work_order_card_scroll" />
+        <activity
+            android:name=".SliderActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_slider" />
+        <activity
+            android:name=".HomeCardActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_card_scroll">
+
+            <!--
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+            -->
+        </activity>
+
+        <activity
+            android:name=".BluetoothConnectionActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_card_scroll">
+
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <service
+            android:name=".LiveCardService"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_live_card_service" />
+
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".BluetoothLiveCardService"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_bluetooth_live_card_service"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <service android:name=".BluetoothService"/>
+    </application>
+
+</manifest>
